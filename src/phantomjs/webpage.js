@@ -12,7 +12,7 @@ console.log("time:"+time);
 var page = require('webpage').create();
 console.log("address: "+address);
 //窗口大小
-page.viewportSize = { width: 2560, height: 1600 } 
+page.viewportSize = { width: 1024, height: 800 }
 //截取从(0, 0)为起点的1024 * 800大小的图像
 //page.clipRect = { top: 0, left: 0, width: 2560, height: 1600 };
 //开启Javascript，允许图片载入，并将userAgent改为"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.31 (KHTML, like Gecko) PhantomJS/19.0"：
