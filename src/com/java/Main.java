@@ -1,17 +1,15 @@
-package java;
+package com.java;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Hello World!");
+        File directory = new File("");//设定为当前文件夹
+        String path = directory.getAbsolutePath()+"/src/phantomjs/webpage.js";//获取绝对路径
         Runtime rt = Runtime.getRuntime();
-
-        String exec = "/usr/local/phantomjs-2.1.1-macosx/bin/phantomjs /var/root/jsLocal/webpage.js";
+        String exec = "/usr/local/phantomjs-2.1.1-macosx/bin/phantomjs "+path;
         String urls [] ={
                 "http://www.baidu.com"
         };
