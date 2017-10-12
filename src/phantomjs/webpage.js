@@ -23,7 +23,9 @@ page.open(address, function(status) {
   console.log("status: " + status);
   if(status === "success") {
     // 如果状态为success，将整个page保存为hfly.jpg（也可以是png，pdf, gif）
-    page.render(time+'.jpg');
+    var vrender = page.render("/private/var/root/github/PrintScreenByUrl/out/"+time+'.jpg');
+    console.log("vrender:"+vrender);
   }
   phantom.exit();
 });
+//page.close();
